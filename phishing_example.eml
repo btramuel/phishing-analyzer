@@ -1,0 +1,24 @@
+From: "PayPal Support <service@paypal.com>" <alerts@mailer-x.example>
+Reply-To: account-help@freemail.example
+Return-Path: <bounce@mailer-x.example>
+To: you@example.com
+Subject: Your account has been limited
+Date: Mon, 12 Oct 2026 09:14:00 -0400
+Authentication-Results: mx.example.com; spf=softfail smtp.mailfrom=mailer-x.example; dkim=none; dmarc=fail header.from=paypal.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="b1"
+
+--b1
+Content-Type: text/plain; charset="utf-8"
+
+We noticed unusual activity. Verify your account within 24 hours:
+https://paypal-secure.example/login.
+
+--b1
+Content-Type: text/html; charset="utf-8"
+
+<p>We noticed unusual activity. Verify your account within 24 hours.</p>
+<p><a href="https://paypal-secure.example/login">www.paypal.com</a></p>
+<p><a href="https://bit.ly/3fakeLink">Track your case</a></p>
+<p><a href="http://203.0.113.45/update">Update billing</a></p>
+--b1--
